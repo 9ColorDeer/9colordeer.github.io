@@ -4,8 +4,10 @@
 #fp-nav.fp-right{ right: 100px; }
 #fp-nav ul li a span, #menu-line, .fp-slidesNav ul li a span{ background: #fff }
 .wea-icon-header{ position: absolute; top: 0; left: 0; z-index: 9999; display: flex; justify-content: space-between; color: #fff; width: 100%;}
-.wea-icon-brand{ padding: 20px 100px; font-size: 24px; }
-.wea-icon-menu{ padding: 20px 100px; font-size: 16px; width: 400px;}
+.wea-icon-brand{ padding: 20px 100px; font-size: 24px; display: flex; width: 120px; justify-content: space-between }
+.wea-icon-brand-img{ width: 42px; height: 42px; }
+.wea-icon-brand-text{ height: 42px; line-height: 42px; display: block; }
+.wea-icon-menu{ padding: 20px 100px; font-size: 16px; width: 600px;}
 .wea-icon-menu-list{ list-style: none; padding: 0; margin: 0; display: flex; justify-content: space-between; }
 .wea-icon-menu-item{ padding: 6px 14px; transition: all 0.4s; cursor: pointer; border-radius: 18px; }
 .wea-icon-menu-item a{ text-decoration: none; color: #fff }

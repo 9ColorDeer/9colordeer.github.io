@@ -4,20 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Weax 领域图标库</title>
+  <title>9Deer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.css" />
   <link rel="stylesheet" href="./css/9Deer.css" />
 </head>
 <body>
   <!-- 头部 -->
   <div class="wea-icon-header">
-    <div class="wea-icon-brand">WeaIconPro</div>
+    <div class="wea-icon-brand">
+      <img class="wea-icon-brand-img" src="./img/logo.png">
+      <span class="wea-icon-brand-text">9Deer</span>
+    </div>
     <div class="wea-icon-menu">
       <ul class="wea-icon-menu-list">
-        <li class="wea-icon-menu-item active"><a href="showcase">物料</a></li>
-        <li class="wea-icon-menu-item"><a>规范</a></li>
-        <li class="wea-icon-menu-item"><a>场景</a></li>
-        <li class="wea-icon-menu-item"><a>行业</a></li>
+        <li class="wea-icon-menu-item active"><a href="#page_index">Home</a></li>
+        <li class="wea-icon-menu-item"><a href="#page_blue">About Us</a></li>
+        <li class="wea-icon-menu-item"><a href="#page_green">Service</a></li>
+        <li class="wea-icon-menu-item"><a href="#page_orange">ShowCase</a></li>
+        <li class="wea-icon-menu-item"><a href="#page_perple">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -37,8 +41,8 @@
         <div id="scene" data-relative-input="true">
           <div class="scene-layer-1" data-depth="0.2">
             <img class="section-logo" src="./img/logo.png" alt="">
-            <h2 class="section-noction">Weax 领域图标库</h2>
-            <p class="section-paragraph">An icon download server developed for Weax Net</p>
+            <h2 class="section-noction">九色鹿传媒</h2>
+            <p class="section-paragraph">借助视频塑造品牌形象，创造品牌价值，从这里开始！</p>
           </div>
           <!-- <div class="scene-layer-2" data-depth="0.6">
             <img class="section-logo" src="public/img/parallax_1.png" alt="">
@@ -48,22 +52,22 @@
     </div>
     <div id="section_blue" class="section section-blue" data-anchor="page_blue">
       <div id="app_blue" class="section-card">
+        <h2 style="color: #fff">About Us</h2>
       </div>
     </div>
     <div id="section_green" class="section section-green" data-anchor="page_green">
       <div id="app_green" class="section-card">
+        <h2 style="color: #fff">Service</h2>
       </div>
     </div>
     <div id="section_orange" class="section section-orange" data-anchor="page_orange">
       <div id="app_orange" class="section-card">
+        <h2 style="color: #fff">ShowCase</h2>
       </div>
     </div>
     <div id="section_perple" class="section section-perple" data-anchor="page_perple">
       <div id="app_perple" class="section-card">
-      </div>
-    </div>
-    <div id="section_grey" class="section section-grey" data-anchor="page_grey">
-      <div id="app_grey" class="section-card">
+        <h2 style="color: #fff">Contact</h2>
       </div>
     </div>
   </div>
@@ -75,9 +79,9 @@
 <script>
   const url = 'https://raw.githubusercontent.com/weavue/wea-icon-resourse/master/'
   new fullpage('#fullpage', {
-    anchors: ['page_index', 'page_blue', 'page_green', 'page_orange', 'page_perple', 'page_grey'],
-    sectionsColor: ['#282c34', '#0079DE', '#217346', '#F14a2d', '#6d3cf7', '#a0b0ba'],
-    navigationTooltips: ['黑', '蓝', '绿', '橙', '紫', '灰'],
+    anchors: ['page_index', 'page_blue', 'page_green', 'page_orange', 'page_perple'],
+    sectionsColor: ['#282c34', '#282c34', '#282c34', '#282c34', '#282c34'],
+    navigationTooltips: ['Home', 'About Us', 'Service', 'ShowCase', 'Contact'],
     css3: true,
     scrollingSpeed: 1000,
     navigation: true,
