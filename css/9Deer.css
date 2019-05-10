@@ -1,25 +1,33 @@
-.section-card{ width: 100%; margin: 0 auto; text-align: center }
+/** 滚动屏样式 **/
+.section-card{ width: 70%; margin: 0 auto; text-align: center }
 .section-noction{ font-size: 46px; color: #b7b7b7 }
 .section-paragraph{ font-size: 28px; color: #b7b7b7 }
 #fp-nav.fp-right{ right: 100px; }
 #fp-nav ul li a span, #menu-line, .fp-slidesNav ul li a span{ background: #fff }
-.wea-icon-header{ position: absolute; top: 0; left: 0; z-index: 9999; display: flex; justify-content: space-between; color: #fff; width: 100%;}
-.wea-icon-brand{ padding: 20px 100px; font-size: 24px; display: flex; width: 120px; justify-content: space-between }
-.wea-icon-brand-img{ width: 42px; height: 42px; }
-.wea-icon-brand-text{ height: 42px; line-height: 42px; display: block; }
-.wea-icon-menu{ padding: 20px 100px; font-size: 16px; width: 600px;}
-.wea-icon-menu-list{ list-style: none; padding: 0; margin: 0; display: flex; justify-content: space-between; }
-.wea-icon-menu-item{ padding: 6px 14px; transition: all 0.4s; cursor: pointer; border-radius: 18px; }
-.wea-icon-menu-item a{ text-decoration: none; color: #fff }
-.wea-icon-menu-list > .active{ background-color: rgba(0, 0, 0, 0.2); }
-.wea-icon-menu-item:hover{ border-radius: 18px; background-color: #fff; color: #000 }
-.wea-icon-menu-item:hover a{ color: #000 }
 
-.wea-icon-color{ position: absolute; bottom: 40px; left: 100px; z-index: 9999; }
-.wea-icon-color-list{ list-style: none; }
-.wea-icon-color-item{ color: #fff; width: 40px; height: 40px; background-color: #fff; border-radius: 30px; margin: 4px 0px; box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2), 0px 12px 17px 2px rgba(0,0,0,0.14), 0px 5px 22px 4px rgba(0,0,0,0.12) !important;}
-.wea-icon-color-blue{ background-color: #0079de }
-.wea-icon-color-green{ background-color: #217346 }
-.wea-icon-color-orange{ background-color: #f14a2d }
-.wea-icon-color-perple{ background-color: #6d3cf7 }
-.wea-icon-color-grey{ background-color: #a0b0ba }
+/** 页面公用部分 **/
+.deer-header{ position: absolute; top: 0; left: 0; z-index: 9999; display: flex; justify-content: space-between; color: #fff; width: 100%;}
+.deer-brand{ padding: 20px 100px; font-size: 24px; display: flex; width: 120px; justify-content: space-between }
+.deer-brand-img{ width: 42px; height: 42px; }
+.deer-brand-text{ height: 42px; line-height: 42px; display: block; }
+.deer-menu{ padding: 20px 100px; font-size: 16px; width: 600px;}
+.deer-menu-list{ list-style: none; padding: 0; margin: 0; display: flex; justify-content: space-between; }
+.deer-menu-item{ padding: 6px 14px; transition: all 0.4s; cursor: pointer; border-radius: 18px; }
+.deer-menu-item a{ text-decoration: none; color: #fff }
+.deer-menu-list > .active{ background-color: rgba(0, 0, 0, 0.2); }
+.deer-menu-item:hover{ border-radius: 18px; background-color: #fff; color: #000 }
+.deer-menu-item:hover a{ color: #000 }
+
+.deer-service{ }
+.deer-service-group{ display: flex; justify-content: space-between; flex-wrap: wrap; justify-items: center }
+.deer-service-item{ width: 320px; height: 320px; background-color: #000 }
+
+/** icon 取色板 **/
+.deer-color{ position: absolute; bottom: 40px; left: 100px; z-index: 9999; }
+.deer-color-list{ list-style: none; }
+.deer-color-item{ color: #fff; width: 40px; height: 40px; background-color: #fff; border-radius: 30px; margin: 4px 0px; box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2), 0px 12px 17px 2px rgba(0,0,0,0.14), 0px 5px 22px 4px rgba(0,0,0,0.12) !important;}
+.deer-color-blue{ background-color: #0079de }
+.deer-color-green{ background-color: #217346 }
+.deer-color-orange{ background-color: #f14a2d }
+.deer-color-perple{ background-color: #6d3cf7 }
+.deer-color-grey{ background-color: #a0b0ba }

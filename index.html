@@ -5,54 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>9Deer</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.css" />
   <link rel="stylesheet" href="./css/9Deer.css" />
 </head>
 <body>
   <!-- 头部 -->
-  <div class="wea-icon-header">
-    <div class="wea-icon-brand">
-      <img class="wea-icon-brand-img" src="./img/logo.png">
-      <span class="wea-icon-brand-text">9Deer</span>
+  <div class="deer-header">
+    <div class="deer-brand">
+      <img class="deer-brand-img" src="./img/logo.png">
+      <span class="deer-brand-text">9Deer</span>
     </div>
-    <div class="wea-icon-menu">
-      <ul class="wea-icon-menu-list">
-        <li class="wea-icon-menu-item active"><a href="#page_index">Home</a></li>
-        <li class="wea-icon-menu-item"><a href="#page_blue">About Us</a></li>
-        <li class="wea-icon-menu-item"><a href="#page_green">Service</a></li>
-        <li class="wea-icon-menu-item"><a href="#page_orange">ShowCase</a></li>
-        <li class="wea-icon-menu-item"><a href="#page_perple">Contact</a></li>
+    <div class="deer-menu">
+      <ul class="deer-menu-list">
+        <li class="deer-menu-item active"><a href="#page_index">Home</a></li>
+        <li class="deer-menu-item"><a href="#page_blue">About Us</a></li>
+        <li class="deer-menu-item"><a href="#page_green">Service</a></li>
+        <li class="deer-menu-item"><a href="#page_orange">ShowCase</a></li>
+        <li class="deer-menu-item"><a href="#page_perple">Contact</a></li>
       </ul>
     </div>
   </div>
-  <div class="wea-icon-color">
-    <ul class="wea-icon-color-list">
-      <li class="wea-icon-color-item wea-icon-color-blue"></li>
-      <li class="wea-icon-color-item wea-icon-color-green"></li>
-      <li class="wea-icon-color-item wea-icon-color-orange"></li>
-      <li class="wea-icon-color-item wea-icon-color-perple"></li>
-      <li class="wea-icon-color-item wea-icon-color-grey"></li>
+  <div class="deer-color">
+    <ul class="deer-color-list">
+      <li class="deer-color-item deer-color-blue"></li>
+      <li class="deer-color-item deer-color-green"></li>
+      <li class="deer-color-item deer-color-orange"></li>
+      <li class="deer-color-item deer-color-perple"></li>
+      <li class="deer-color-item deer-color-grey"></li>
     </ul>
   </div>
   <div id="fullpage">
     <div id="section_index" class="section section-index" data-anchor="page_index">
       <div id="app_index" class="section-card">
-        <!-- 视差动画 -->
-        <div id="scene" data-relative-input="true">
+        <!-- 首页-视差动画 -->
+        <!-- <div id="scene" data-relative-input="true">
           <div class="scene-layer-1" data-depth="0.2">
             <img class="section-logo" src="./img/logo.png" alt="">
             <h2 class="section-noction">九色鹿传媒</h2>
             <p class="section-paragraph">借助视频塑造品牌形象，创造品牌价值，从这里开始！</p>
           </div>
-          <!-- <div class="scene-layer-2" data-depth="0.6">
+          <div class="scene-layer-2" data-depth="0.6">
             <img class="section-logo" src="public/img/parallax_1.png" alt="">
-          </div> -->
+          </div>
+        </div> -->
+        <!-- 服务泛微 -->
+        <div class="deer-service">
+          <div class="deer-service-group">
+            <div class="deer-service-item">
+              
+            </div>
+            <div class="deer-service-item">
+              
+            </div>
+            <div class="deer-service-item">
+            
+            </div>
+            <div class="deer-service-item">
+            
+            </div>
+            <div class="deer-service-item">
+            
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div id="section_blue" class="section section-blue" data-anchor="page_blue">
       <div id="app_blue" class="section-card">
         <h2 style="color: #fff">About Us</h2>
+        <p>
+          深圳九色鹿文化传媒有限公司，简称九色鹿传媒。
+          九色鹿传媒创立于经济特区深圳，集结了一批实干有梦想有追求的影视从业者，从业以来，我们始终以客户诉求为出发点，深度了解行业发展趋势，对产品、行业痛点加以认知，不断挖掘致力于将客户的最初寄托演变为极具创意和魔力的影片，为企业、产品赋予力量，助力客户品牌推广，创造营收价值。
+          借助视频塑造品牌形象，创造品牌价值，从这里开始，九色鹿传媒倾力为您助力。
+        </p>
       </div>
     </div>
     <div id="section_green" class="section section-green" data-anchor="page_green">
@@ -77,7 +103,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script>
-  const url = 'https://raw.githubusercontent.com/weavue/wea-icon-resourse/master/'
+  const url = 'https://raw.githubusercontent.com/weavue/deer-resourse/master/'
   new fullpage('#fullpage', {
     anchors: ['page_index', 'page_blue', 'page_green', 'page_orange', 'page_perple'],
     sectionsColor: ['#282c34', '#282c34', '#282c34', '#282c34', '#282c34'],
