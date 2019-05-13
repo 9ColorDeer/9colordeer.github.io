@@ -11,7 +11,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Jekyll v3.8.5" />
-    <title>9CDeer</title>
+    <title>9Deer</title>
     <!-- Bootstrap core CSS -->
     <link
       rel="stylesheet"
@@ -20,23 +20,35 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <!-- 头部 -->
-    <div
-      class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm deer-header"
-    >
-      <h5 class="my-0 mr-md-auto font-weight-normal">
-        <!-- <img class="deer-brand-img" src="./img/logo.png" /> -->
-        <span class="deer-brand-text">9CDeer</span>
-      </h5>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#page_index">Home</a>
-        <a class="p-2 text-dark" href="#page_blue">AboutUs</a>
-        <a class="p-2 text-dark" href="#page_green">Service</a>
-        <a class="p-2 text-dark" href="#page_orange">ShowCase</a>
-        <a class="p-2 text-dark" href="#page_orange">Contact</a>
-      </nav>
-      <!-- <a class="btn btn-outline-primary" href="#">Sign up</a> -->
-    </div>
+    <!-- 顶部导航 -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container-fluid">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">9Deer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#showcase">ShowCase</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#workflow">Workflow</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 着陆页 -->
     <header>
       <div class="overlay"></div>
       <video
@@ -60,96 +72,102 @@
       </div>
     </header>
 
-    <!-- 作品案例 -->
+    <!-- 正文内容 -->
     <div class="container">
-      <!-- Page Heading -->
-      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="display-4">ShowCase</h1>
-        <p class="lead">
-          Quickly build an effective pricing table for your potential customers
-          with this Bootstrap example. It’s built with default Bootstrap
-          components and utilities with little customization.
-        </p>
-      </div>
-
-      <!-- Project One -->
-      <div class="row">
-        <div class="col-md-7">
-          <a href="#">
-            <img
-              class="img-fluid rounded mb-3 mb-md-0"
-              src="http://placehold.it/700x300"
-              alt=""
-            />
-          </a>
-        </div>
-        <div class="col-md-5">
-          <h3>Project One</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-            veniam exercitationem expedita laborum at voluptate. Labore,
-            voluptates totam at aut nemo deserunt rem magni pariatur quos
-            perspiciatis atque eveniet unde.
+      <!-- 作品案例 -->
+      <section id="showcase">
+        <!-- 标题 -->
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+          <h1 class="display-4">ShowCase</h1>
+          <p class="lead">
+            Quickly build an effective pricing table for your potential customers
+            with this Bootstrap example. It’s built with default Bootstrap
+            components and utilities with little customization.
           </p>
-          <a class="btn btn-primary" href="#">View Project</a>
         </div>
-      </div>
-      <!-- /.row -->
 
-      <hr />
-
-      <!-- Project Two -->
-      <div class="row">
-        <div class="col-md-7">
-          <a href="#">
-            <img
-              class="img-fluid rounded mb-3 mb-md-0"
-              src="http://placehold.it/700x300"
-              alt=""
-            />
-          </a>
+        <!-- Project One -->
+        <div class="row">
+          <div class="col-md-7">
+            <a href="#">
+              <img
+                class="img-fluid rounded mb-3 mb-md-0"
+                src="http://placehold.it/700x300"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-md-5">
+            <h3>Project One</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+              veniam exercitationem expedita laborum at voluptate. Labore,
+              voluptates totam at aut nemo deserunt rem magni pariatur quos
+              perspiciatis atque eveniet unde.
+            </p>
+            <a class="btn btn-primary" href="#">View Project</a>
+          </div>
         </div>
-        <div class="col-md-5">
-          <h3>Project Two</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit
-            velit cumque vero doloremque repellendus distinctio maiores rem
-            expedita a nam vitae modi quidem similique ducimus! Velit, esse
-            totam tempore.
-          </p>
-          <a class="btn btn-primary" href="#">View Project</a>
-        </div>
-      </div>
-      <!-- /.row -->
+        <!-- /.row -->
 
-      <hr />
+        <hr />
 
-      <!-- Project Three -->
-      <div class="row">
-        <div class="col-md-7">
-          <a href="#">
-            <img
-              class="img-fluid rounded mb-3 mb-md-0"
-              src="http://placehold.it/700x300"
-              alt=""
-            />
-          </a>
+        <!-- Project Two -->
+        <div class="row">
+          <div class="col-md-7">
+            <a href="#">
+              <img
+                class="img-fluid rounded mb-3 mb-md-0"
+                src="http://placehold.it/700x300"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-md-5">
+            <h3>Project Two</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit
+              velit cumque vero doloremque repellendus distinctio maiores rem
+              expedita a nam vitae modi quidem similique ducimus! Velit, esse
+              totam tempore.
+            </p>
+            <a class="btn btn-primary" href="#">View Project</a>
+          </div>
         </div>
-        <div class="col-md-5">
-          <h3>Project Three</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis,
-            temporibus, dolores, at, praesentium ut unde repudiandae voluptatum
-            sit ab debitis suscipit fugiat natus velit excepturi amet commodi
-            deleniti alias possimus!
-          </p>
-          <a class="btn btn-primary" href="#">View Project</a>
-        </div>
-      </div>
+        <!-- /.row -->
 
-      <hr />
+        <hr />
+
+        <!-- Project Three -->
+        <div class="row">
+          <div class="col-md-7">
+            <a href="#">
+              <img
+                class="img-fluid rounded mb-3 mb-md-0"
+                src="http://placehold.it/700x300"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-md-5">
+            <h3>Project Three</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis,
+              temporibus, dolores, at, praesentium ut unde repudiandae voluptatum
+              sit ab debitis suscipit fugiat natus velit excepturi amet commodi
+              deleniti alias possimus!
+            </p>
+            <a class="btn btn-primary" href="#">View Project</a>
+          </div>
+        </div>
+
+        <hr />
+      </section>
+      <!-- 联系我们 -->
     </div>
-    <!-- 联系我们 -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="./js/scrolling-nav.js"></script>
   </body>
 </html>
