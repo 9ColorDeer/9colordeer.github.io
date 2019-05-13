@@ -7,8 +7,8 @@
 
 /** 页面公用部分 **/
 .deer-header{ position: absolute; top: 0; left: 0; z-index: 9999; display: flex; justify-content: space-between; color: #fff; width: 100%;}
-.deer-brand{ padding: 20px 100px; font-size: 24px; display: flex; width: 120px; justify-content: space-between }
-.deer-brand-img{ width: 42px; height: 42px; }
+.deer-brand{ padding: 20px 100px; font-size: 24px; display: flex; width: 130px; justify-content: space-between; user-select: none; }
+.deer-brand-img{ width: 38px; height: 38px; }
 .deer-brand-text{ height: 42px; line-height: 42px; display: block; }
 .deer-menu{ padding: 20px 100px; font-size: 16px; width: 600px;}
 .deer-menu-list{ list-style: none; padding: 0; margin: 0; display: flex; justify-content: space-between; }
@@ -18,9 +18,8 @@
 .deer-menu-item:hover{ border-radius: 18px; background-color: #fff; color: #000 }
 .deer-menu-item:hover a{ color: #000 }
 
-.deer-service{ }
-.deer-service-group{ display: flex; justify-content: space-between; flex-wrap: wrap; justify-items: center }
-.deer-service-item{ width: 320px; height: 320px; background-color: #000 }
+.deer-service{ width: 980px; height: 580px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; }
+.deer-service-item{ width: 320px; height: 280px; background-color: rgba(0, 0, 0, 0.1) }
 
 /** icon 取色板 **/
 .deer-color{ position: absolute; bottom: 40px; left: 100px; z-index: 9999; }
