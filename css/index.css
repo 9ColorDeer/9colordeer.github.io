@@ -48,6 +48,11 @@ header .overlay {
   }
 }
 
+
+footer{
+  background-color: #1a1a1a;
+}
+
 .deer-header{
   position: fixed;
   z-index: 9999;
@@ -106,5 +111,11 @@ header .overlay {
 
 #services .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+@media (min-width: 62em){
+  .featurette-heading {
+    margin-top: 7rem;
+  }
 }
 

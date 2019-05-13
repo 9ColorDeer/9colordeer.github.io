@@ -25,5 +25,15 @@
     target: '#mainNav',
     offset: 56
   });
+  // scroll header
+  $(document).on('scroll', function() {
+    if($(document).scrollTop()>300) {
+      $('.navbar').removeClass('navbar-dark');
+      $('.navbar').addClass('bg-light navbar-light shadow');
+    }else{
+      $('.navbar').removeClass('navbar-light bg-light shadow');
+      $('.navbar').addClass('navbar-dark');
+    }
+  })
 
 })(jQuery); // End of use strict
