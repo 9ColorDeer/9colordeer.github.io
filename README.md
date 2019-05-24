@@ -1,13 +1,7 @@
 # 9Deer
 
-This some fixed by codesandbox
+https://www.9colordeer.cn/
 
-http://www.turkyden.cn
+## 测试视频
 
-## 七牛云测试外链地址
-
-http://prfrpok9e.bkt.clouddn.com/background.mp4
-
-
-https://9deer-1253291516.cos.ap-shanghai.myqcloud.com/background.mp4?q-sign-algorithm=sha1&q-ak=AKIDlH3S27cSHEn8s6ouUgxX2nVlKLPtH4ca&q-sign-time=1557740455;1557742255&q-key-time=1557740455;1557742255&q-header-list=&q-url-param-list=&q-signature=6e678b289fc1203ce32b7c5cab3774a890cb3fc6&x-cos-security-token=bef43921bf1c89dba8791fb71a93c3f7574b85d110001
-
+https://jiuselu-1257697918.cos.ap-guangzhou.myqcloud.com/%E5%8D%8E%E4%B8%BAISP%E4%B8%BB%E6%89%93%E8%A7%86%E9%A2%9120170313.mp4?q-sign-algorithm=sha1&q-ak=AKIDOH3umpiIR5yoyEhg36az5srQsy73j6YD&q-sign-time=1558524324;1558526124&q-key-time=1558524324;1558526124&q-header-list=&q-url-param-list=&q-signature=ce10f99b98afc53ed6ace145a9d4609ff69d9938&x-cos-security-token=69e3ff8a387e29311b5c17a990a341c2196cb85b10001
