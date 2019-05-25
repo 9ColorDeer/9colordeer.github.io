@@ -1,6 +1,6 @@
 # 9Deer
 
-https://www.9colordeer.cn/
+http://www.9colordeer.cn/
 
 ## 测试视频
 
