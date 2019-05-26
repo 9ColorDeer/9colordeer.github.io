@@ -135,7 +135,7 @@ footer{
   position: absolute;
   bottom: 0;
   text-align: center;
-  opacity: 0;
+  opacity: 0.8;
   color: #fff;
   background: rgba(0, 0, 0, .4);
   -webkit-transition: opacity .25s ease;
