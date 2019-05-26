@@ -94,7 +94,7 @@ header .overlay {
 }
 
 
-footer{
+#contact{
   background-color: #1a1a1a;
 }
 
@@ -164,3 +164,37 @@ footer{
   }
 }
 
+span.ColorDeer {
+  background: linear-gradient(to right, #96c7fe, #e485fc);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#aboutus{
+  position: relative;
+  z-index: 1029;
+  top: -100px;
+  width: 100%;
+}
+
+#showcase{
+  margin-top: -60px;
+}
+
+.showcase-classic:hover{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  transition: all ease-in 0.2s;
+}
+
+/* .showcase-img{
+  width: 100%;
+  overflow: hidden;
+} */
+
+.showcase-img img{
+  cursor: pointer;
+  transition: all 0.6s;/*图片放大过程的时间*/
+}
+.showcase-img img:hover{
+  transform: scale(1.2);/*鼠标经过图片放大的倍数*/
+}
