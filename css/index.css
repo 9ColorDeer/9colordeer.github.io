@@ -177,6 +177,12 @@ span.ColorDeer {
   width: 100%;
 }
 
+#aboutus .card{
+  border-left-color:#96c7fe !important;
+  border-left-style: solid !important;
+  border-left-width: 6px !important; 
+}
+
 #showcase{
   margin-top: -60px;
 }
