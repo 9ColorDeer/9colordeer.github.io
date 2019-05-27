@@ -10,3 +10,8 @@
     s.parentNode.insertBefore(j, s);
 })(window, document, 'script', '_MEIQIA');
 _MEIQIA('entId', 152310);
+
+function onMeiqia() {
+    document.getElementById('MEIQIA-BTN').click();
+    return false;
+}
