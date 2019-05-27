@@ -256,3 +256,12 @@ section.pricing {
     opacity: 1;
   }
 }
+
+#MEIQIA-BTN-HOLDER{
+  bottom: 30px;
+}
+
+#MEIQIA-BTN-HOLDER #MEIQIA-BTN {
+  border-radius: 20px; 
+  background: linear-gradient(to right, #96c7fe, #e485fc);
+}
