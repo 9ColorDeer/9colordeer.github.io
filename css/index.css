@@ -258,7 +258,7 @@ section.pricing {
 }
 
 #MEIQIA-BTN-HOLDER{
-  bottom: 30px;
+  bottom: 30px !important;
 }
 
 #MEIQIA-BTN-HOLDER #MEIQIA-BTN {
