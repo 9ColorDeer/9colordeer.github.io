@@ -51,6 +51,7 @@ header {
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
+  border-bottom: 2px solid #e485fc;
 }
 
 header video {
@@ -180,7 +181,7 @@ span.ColorDeer {
 #aboutus .card{
   border-left-color:#96c7fe !important;
   border-left-style: solid !important;
-  border-left-width: 6px !important; 
+  border-left-width: 4px !important; 
 }
 
 #showcase{
@@ -263,11 +264,14 @@ section.pricing {
   }
 }
 
-#MEIQIA-BTN-HOLDER{
-  bottom: 30px !important;
+#MEIQIA-BTN-HOLDER #MEIQIA-BTN {
+  background: linear-gradient(to right, #96c7fe, #e485fc);
+  border: none;
+  transition: all ease-in-out 0.3s;
+  box-shadow: 0 0.3rem 0.8rem 0 rgba(228, 133, 252, 0.5);
 }
 
-#MEIQIA-BTN-HOLDER #MEIQIA-BTN {
-  border-radius: 20px; 
-  background: linear-gradient(to right, #96c7fe, #e485fc);
+#MEIQIA-BTN-HOLDER #MEIQIA-BTN:hover{
+  transform: translate3d(-2px,-4px,0px);
+  box-shadow: 0 0.4rem 1rem 0 rgba(228, 133, 252, 0.6);
 }

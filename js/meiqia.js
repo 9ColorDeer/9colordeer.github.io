@@ -9,9 +9,4 @@
     j.src = 'https://static.meiqia.com/dist/meiqia.js?_=t';
     s.parentNode.insertBefore(j, s);
 })(window, document, 'script', '_MEIQIA');
-_MEIQIA('entId', 152325);// 152310
-
-function onMeiqia() {
-    document.getElementById('MEIQIA-BTN').click();
-    return false;
-}
+_MEIQIA('entId', 152325);
