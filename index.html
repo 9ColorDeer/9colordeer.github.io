@@ -505,18 +505,18 @@
           <div class="col-lg-4">
             <div class="card mb-5 mb-lg-0">
               <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
+                <h5 class="card-title text-muted text-uppercase text-center">前期调研</h5>
                 <h6 class="card-price text-center">¥0<span class="period">/单</span></h6>
                 <hr>
                 <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited Private Projects</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated Phone Support</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>客户需求</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>沟通解答</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>案列分析</li>
+                  <li><span class="fa-li"><i class="fas fa-check"></i></span>受众人群</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>评估立项</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>客户沟通</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>讨论方案</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>搜集资料</li>
                 </ul>
                 <div onclick="window.onMeiqia()" class="btn btn-block btn-primary text-uppercase">马上咨询</div>
               </div>
@@ -526,7 +526,7 @@
           <div class="col-lg-4">
             <div class="card mb-5 mb-lg-0">
               <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
+                <h5 class="card-title text-muted text-uppercase text-center">方案策划</h5>
                 <h6 class="card-price text-center">¥999<span class="period">/单</span></h6>
                 <hr>
                 <ul class="fa-ul">
@@ -547,8 +547,8 @@
           <div class="col-lg-4">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
-                <h6 class="card-price text-center">¥1599<span class="period">/单</span></h6>
+                <h5 class="card-title text-muted text-uppercase text-center">视频制作</h5>
+                <h6 class="card-price text-center">¥*<span class="period">/单</span></h6>
                 <hr>
                 <ul class="fa-ul">
                   <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited Users</strong></li>
@@ -568,6 +568,11 @@
       </div>
     </section>
 
+    <!-- 地图组件 -->
+    <section id="map" class="pricing py-5 pb-5">
+      <div id="qq_map"></div>
+    </section>
+    
     <!-- 底部版权 -->
     <footer class="footer pt-4 pt-md-5 pb-md-5 border-top">
       <div class="container">
@@ -619,5 +624,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="./js/scrolling-nav.js"></script>
     <script src="./js/meiqia.js"></script>
+    <!-- 地图组件 -->
+    <script src="https://map.qq.com/api/js?v=2.exp&key=UDKBZ-RS5KP-GZPDP-V7W4M-4VJP5-KQBWG"></script>
+    <script>
+      window.onload = function() {
+        //定义map变量 调用 qq.maps.Map() 构造函数   获取地图显示容器
+        var map = new qq.maps.Map(document.getElementById("qq_map"), {
+            center: new qq.maps.LatLng(39.916527,116.397128),      // 地图的中心地理坐标。
+            zoom:8                                                 // 地图的中心地理坐标。
+        });
+      }
+    </script>
   </body>
 </html>
