@@ -570,7 +570,9 @@
 
     <!-- 地图组件 -->
     <section id="map" class="pricing py-5 pb-5">
-      <div id="qq_map"></div>
+      <div class="container">
+          <div id="qq_map"></div>
+      </div>
     </section>
     
     <!-- 底部版权 -->
@@ -625,15 +627,25 @@
     <script src="./js/scrolling-nav.js"></script>
     <script src="./js/meiqia.js"></script>
     <!-- 地图组件 -->
-    <script src="https://map.qq.com/api/js?v=2.exp&key=UDKBZ-RS5KP-GZPDP-V7W4M-4VJP5-KQBWG"></script>
     <script>
-      window.onload = function() {
-        //定义map变量 调用 qq.maps.Map() 构造函数   获取地图显示容器
-        var map = new qq.maps.Map(document.getElementById("qq_map"), {
-            center: new qq.maps.LatLng(39.916527,116.397128),      // 地图的中心地理坐标。
-            zoom:8                                                 // 地图的中心地理坐标。
-        });
-      }
+        function init() {
+          var myLatlng = new qq.maps.LatLng(39.916527,116.397128);
+          var myOptions = {
+            zoom: 8,
+            center: myLatlng,
+            mapTypeId: qq.maps.MapTypeId.ROADMAP
+          }
+          var map = new qq.maps.Map(document.getElementById("qq_map"), myOptions);
+        }
+        
+        function loadScript() {
+          var script = document.createElement("script");
+          script.type = "text/javascript";
+          script.src = "https://map.qq.com/api/js?v=2.exp&key=UDKBZ-RS5KP-GZPDP-V7W4M-4VJP5-KQBWG&callback=init";
+          document.body.appendChild(script);
+        }
+        
+        window.onload = loadScript;
     </script>
   </body>
 </html>

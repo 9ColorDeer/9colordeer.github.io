@@ -275,3 +275,8 @@ section.pricing {
   transform: translate3d(-2px,-4px,0px);
   box-shadow: 0 0.4rem 1rem 0 rgba(228, 133, 252, 0.6);
 }
+
+#qq_map{
+  width: 100%;
+  height: 400px;
+}
