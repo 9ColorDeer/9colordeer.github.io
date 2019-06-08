@@ -10,7 +10,7 @@
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  <link rel="stylesheet" href="./css/index.css?d=20190527" />
+  <link rel="stylesheet" href="./css/index.css?d=20190608" />
   <style>
     .portfolio-box{ cursor: default }
     .project-category{ width: 50%; display: none }
@@ -347,7 +347,7 @@
   <script src="./js/scrolling-nav.js"></script>
   <script src="./js/meiqia.js"></script>
   <script>
-    $.getJSON('./datas/showcase.json', function (datas) {
+    $.getJSON('./datas/showcase_zxl.json', function (datas) {
       console.log(datas);
       document.getElementById('showcase_block').innerHTML = datas.map(function (item, index) {
         return `<div class="col-xl-3 col-md-6 mb-4">
@@ -356,10 +356,10 @@
                 <img
                   src="${item.post}"
                   class="card-img-top"
-                  alt="华为平板广告武侠篇"
+                  alt="${item.name}"
                 />
                 <div class="card-body text-center">
-                  <div class="card-text text-black-50">${item.name}</div>
+                  <div class="card-text text-black-50 text-truncate">${item.name}</div>
                 </div>
                 <video width="100%" controls id="showcase${index}" style="display:none;">
                   <source src="${item.video}" type="video/mp4">
