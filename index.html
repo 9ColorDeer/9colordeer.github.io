@@ -329,7 +329,6 @@
   <script src="./js/meiqia.js"></script>
   <script>
     $.getJSON('./datas/showcase_zxl.json', function (datas) {
-      console.log(datas);
       document.getElementById('showcase_block').innerHTML = datas.map(function (item, index) {
         return `<div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-0 shadow">
@@ -349,16 +348,14 @@
             </div>
           </div>`
       }).reduce(function (p, v) { return p + v; });
+      // 防止鼠标右键下载视频
+      $('video').bind('contextmenu', function() { return false; });
     })
     // 鼠标经过显示隐藏
     $('.portfolio-box').on('mouseover', function(e) {
       $('.project-category').hide();
       $(this).find('.project-category').show();
     })
-    // 防止鼠标右键下载视频
-    $(document).ready(function(){
-      $('video').bind('contextmenu',function() { return false; });
-    });
   </script>
 </body>
 
