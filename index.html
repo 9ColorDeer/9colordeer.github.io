@@ -355,6 +355,10 @@
       $('.project-category').hide();
       $(this).find('.project-category').show();
     })
+    // 防止鼠标右键下载视频
+    $(document).ready(function(){
+      $('video').bind('contextmenu',function() { return false; });
+    });
   </script>
 </body>
 
