@@ -1,5 +1,5 @@
 {
-  "name": "9deer",
+  "name": "9ColorDeer",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Turkyden/9Deer.git"
+    "url": "git+https://github.com/Turkyden/9ColorDeer.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Turkyden/9Deer/issues"
+    "url": "https://github.com/Turkyden/9ColorDeer/issues"
   },
-  "homepage": "https://github.com/Turkyden/9Deer#readme"
+  "homepage": "https://github.com/Turkyden/9ColorDeer#readme"
 }
