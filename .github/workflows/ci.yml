@@ -1,5 +1,8 @@
 name: 9ColorDeer Actions Build and Deploy Demo
-on: [push]
+on:
+  push:
+    branches:
+      - master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
