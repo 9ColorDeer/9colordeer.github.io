@@ -15,5 +15,5 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN_9ColorDeer }}
         BRANCH: gh-pages
-        FOLDER: .
+        FOLDER: css
         BUILD_SCRIPT: npm install
