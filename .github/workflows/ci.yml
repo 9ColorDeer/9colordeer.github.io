@@ -1,8 +1,5 @@
 name: 9ColorDeer Actions Build and Deploy Demo
-on:
-  push:
-    branches:
-      - master
+on: [push]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -17,4 +14,4 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: . # The folder the action should deploy.
+          FOLDER: build # The folder the action should deploy.
