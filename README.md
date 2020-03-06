@@ -1,6 +1,8 @@
 # 9ColorDeer
 
-http://www.9colordeer.cn/
+http://www.9colordeer.cn/ 
+
+https://turkyden.github.io/9ColorDeer/
 
 ## 测试视频
 
