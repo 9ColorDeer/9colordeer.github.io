@@ -21,6 +21,10 @@
       width: 100%;
       z-index: 99999;
     }
+    .hover\:shadow:hover {
+      -webkit-box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+    }
   </style>
 </head>
 
@@ -136,7 +140,7 @@
       <!-- 公司介绍 -->
       <div class="row">
         <div class="col-md-12">
-          <div class="card p-5 border-0 shadow">
+          <div class="card p-5 border-0">
             <blockquote class="blockquote mb-0 card-body">
               <p class="font-weight-bolder">
                 深圳市九色鹿文化传媒有限公司 ，简称「九色鹿传媒」
@@ -337,7 +341,7 @@
     $.getJSON('./datas/showcase_zxl.json', function (datas) {
       document.getElementById('showcase_block').innerHTML = datas.map(function (item, index) {
         return `<div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-0 shadow">
+            <div class="card border-0 hover:shadow">
               <a data-fancybox href="${item.video}" class="text-decoration-none">
                 <img
                   src="${item.post}"
