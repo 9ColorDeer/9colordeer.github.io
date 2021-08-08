@@ -1,9 +1,15 @@
-# 9ColorDeer
+# umi project
 
-https://www.9colordeer.cn/
+## Getting Started
 
-## About
+Install dependencies,
 
-- [Github Repo]()
-- [Github Page](https://github.com/Turkyden/9ColorDeer/settings/pages)
-- [Tencent OSS]()
+```bash
+$ yarn
+```
+
+Start the dev server,
+
+```bash
+$ yarn start
+```
