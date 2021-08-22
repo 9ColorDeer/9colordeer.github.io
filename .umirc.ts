@@ -2,8 +2,8 @@ import { defineConfig } from 'umi';
 
 export default defineConfig({
   title: '九色鹿传媒',
-  ssr: {},
-  exportStatic: {},
+  // ssr: {},
+  // exportStatic: {},
   nodeModulesTransform: {
     type: 'none',
   },

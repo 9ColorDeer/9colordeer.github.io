@@ -2,7 +2,7 @@ import { Link } from 'umi';
 
 export default function Header() {
   return (
-    <header className="text-gray-400 bg-gray-900 body-font">
+    <header className="text-gray-400 body-font absolute top-0 left-0 w-full z-50">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <Link
           to="/"
@@ -23,13 +23,18 @@ export default function Header() {
           <span className="ml-3 text-xl">九色鹿传媒</span>
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <Link to="/case" className="mr-5 text-gray-400 hover:text-white">
+          <Link to="/case" className="mr-5 text-gray-300 hover:text-indigo-500">
             案例库
           </Link>
-          <Link className="mr-5 text-gray-400 hover:text-white">解决方案</Link>
-          <Link className="mr-5 text-gray-400 hover:text-white">关于我们</Link>
-          <Link className="mr-5 text-gray-400 hover:text-white">服务流程</Link>
-          <Link className="mr-5 text-gray-400 hover:text-white">联系我们</Link>
+          <Link className="mr-5 text-gray-300 hover:text-indigo-500">
+            解决方案
+          </Link>
+          <Link className="mr-5 text-gray-300 hover:text-indigo-500">
+            关于我们
+          </Link>
+          <Link className="mr-5 text-gray-300 hover:text-indigo-500">
+            服务流程
+          </Link>
         </nav>
       </div>
     </header>

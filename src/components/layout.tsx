@@ -3,7 +3,7 @@ import Footer from './footer';
 
 export default function Layout({ children }: { children: any }) {
   return (
-    <div>
+    <div className="relative">
       <Header />
       {children}
       <Footer />
