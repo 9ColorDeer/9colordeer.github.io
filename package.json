@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
-    "lightgallery": "^2.2.0",
+    "@fancyapps/ui": "^4.0.0",
     "react": "17.x",
     "react-dom": "17.x",
     "umi": "^3.5.15",

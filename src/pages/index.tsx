@@ -1,14 +1,7 @@
 import Layout from '@/components/layout';
 import IMAGE_ORGS from '@/assets/orgs.png';
 import MOCK from '@/assets/mock.json';
-import LightGallery from 'lightgallery/react';
-// import styles
-import 'lightgallery/css/lightgallery.css';
-import 'lightgallery/css/lg-zoom.css';
-import 'lightgallery/css/lg-thumbnail.css';
-// import plugins if you need
-import lgThumbnail from 'lightgallery/plugins/thumbnail';
-import lgZoom from 'lightgallery/plugins/zoom';
+import Fancybox from '@/components/fancybox';
 
 import './index.css';
 
@@ -70,42 +63,38 @@ export default function IndexPage() {
               我们针对不同行业的合作伙伴量身定制了品牌营销影视解决方案
             </p>
           </div>
-          <LightGallery
-            elementClassNames="flex flex-wrap -m-4"
-            onInit={onInit}
-            speed={500}
-          >
-            {MOCK.map((item, key) => (
-              <a
-                key={key}
-                className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer"
-                data-lg-size="1280-720"
-                data-video='{"source": [{"src":"https://jiuselu-1257697918.cos.ap-guangzhou.myqcloud.com/%E4%BD%9C%E5%93%81%E5%8A%A0logo/%E5%8D%8E%E4%B8%BA%E5%B9%B3%E6%9D%BF%E6%AD%A6%E4%BE%A0%E7%AF%87%E5%B8%A6logo.mp4", "type":"video/mp4"}], "tracks": [{"src": "{/videos/title.txt", "kind":"captions", "srclang": "en", "label": "English", "default": "true"}], "attributes": {"preload": false, "controls": true}}'
-                data-poster="https://jiuselu-1257697918.cos-website.ap-guangzhou.myqcloud.com/作品截图裁剪后/华为平板广告武侠篇.png"
-                data-sub-html="<h4>Thank You!</h4><p> Sample Wistia video </p>"
-              >
-                <div className="flex relative">
-                  <img
-                    alt="gallery"
-                    className="absolute inset-0 w-full h-full object-cover object-center"
-                    src={item.post}
-                  />
-                  <div className="px-8 py-10 relative z-10 w-full border-solid border-4 border-indigo-500 bg-white bg-opacity-90 opacity-0 hover:opacity-100">
-                    <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                      THE SUBTITLE
-                    </h2>
-                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                      {item.name}
-                    </h1>
-                    <p className="leading-relaxed">
-                      Photo booth fam kinfolk cold-pressed sriracha leggings
-                      jianbing microdosing tousled waistcoat.
-                    </p>
+          <div className="flex flex-wrap -m-4">
+            <Fancybox>
+              {MOCK.map((item, key) => (
+                <div
+                  key={key}
+                  className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer"
+                  data-fancybox="gallery"
+                  data-src={item.video}
+                >
+                  <div className="flex relative">
+                    <img
+                      alt="gallery"
+                      className="absolute inset-0 w-full h-full object-cover object-center"
+                      src={item.post}
+                    />
+                    <div className="px-8 py-10 relative z-10 w-full border-solid border-4 border-indigo-500 bg-white bg-opacity-90 opacity-0 hover:opacity-100">
+                      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                        THE SUBTITLE
+                      </h2>
+                      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                        {item.name}
+                      </h1>
+                      <p className="leading-relaxed">
+                        Photo booth fam kinfolk cold-pressed sriracha leggings
+                        jianbing microdosing tousled waistcoat.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </a>
-            ))}
-          </LightGallery>
+              ))}
+            </Fancybox>
+          </div>
         </div>
       </section>
 
