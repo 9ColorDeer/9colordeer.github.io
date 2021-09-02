@@ -35,12 +35,12 @@ export default function IndexPage() {
                 为企业提供专业的影视广告创意传播方案及制作服务，助力企业品牌升级！
               </p>
               <div className="flex justify-center">
-                <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-full text-lg cursor-pointer">
+                <div className="inline-flex text-white py-2 bg-indigo-500 hover:bg-indigo-600 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg cursor-pointer">
                   沟通需求
-                </button>
-                <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded-full text-lg cursor-pointer">
-                  获取报价
-                </button>
+                </div>
+                <div className="ml-4 inline-flex text-gray-300 py-2 px-6 hover:text-indigo-600 focus:outline-none text-lg cursor-pointer">
+                  获取报价 &rarr;
+                </div>
               </div>
             </div>
             <div className="w-8 h-12 rounded-full border border-solid border-gray-300 flex flex-col justify-start items-center pt-2">
@@ -51,7 +51,7 @@ export default function IndexPage() {
       </section>
 
       <section
-        className="text-gray-600 body-font bg-gray-200"
+        className="text-gray-600 body-font bg-gray-100"
         style={{ paddingTop: '100vh' }}
       >
         <div className="container px-5 py-24 mx-auto">
@@ -78,10 +78,7 @@ export default function IndexPage() {
                       className="absolute inset-0 w-full h-full object-cover object-center"
                       src={item.post}
                     />
-                    <div className="px-8 py-10 relative z-10 w-full border-solid border-4 border-indigo-500 bg-white bg-opacity-90 opacity-0 hover:opacity-100">
-                      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                        THE SUBTITLE
-                      </h2>
+                    <div className="px-8 py-10 relative z-10 w-full border-solid border-2 border-indigo-300 bg-indigo-50 bg-opacity-90 opacity-0 hover:opacity-100">
                       <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                         {item.name}
                       </h1>
@@ -89,6 +86,9 @@ export default function IndexPage() {
                         Photo booth fam kinfolk cold-pressed sriracha leggings
                         jianbing microdosing tousled waistcoat.
                       </p>
+                      <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                        在线观看 &rarr;
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -104,20 +104,273 @@ export default function IndexPage() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              className="inline-block w-8 h-8 text-gray-400 mb-8"
+              className="inline-block w-8 h-8 text-indigo-500 mb-8"
               viewBox="0 0 975.036 975.036"
             >
               <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
             </svg>
             <p className="leading-relaxed text-lg">
-              九色鹿传媒创立于经济特区深圳，集结了一批实干有梦想有追求的精英团队，我们长期服务于华为、网易、荣耀、TCL、电信等品牌企业，为企业提供专业的影视广告
-              创意方案及拍摄制作服务，我们始终以客户诉求为出发点，将客户的最初诉求打造为极具创意和营收价值的影片，帮助客户抢占和巩固品牌领导者的位置。
+              「九色鹿传媒」创立于经济特区 -
+              深圳，专注于为企业提供专业的影视广告、创意方案及拍摄制作服务，始终以客户诉求为出发点，帮助客户抢占和巩固品牌领导者的位置。
             </p>
             <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
             <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
               https://www.9colordeer.cn/
             </h2>
             <p className="text-gray-500">九色鹿传媒</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="text-gray-600 bg-gray-100 body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+              团队介绍
+            </h1>
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+              团队成员来自国内外头部企业，具备丰富的项目经验
+            </p>
+          </div>
+          <div className="flex flex-wrap -m-4">
+            <div className="p-4 lg:w-1/2">
+              <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img
+                  alt="team"
+                  className="flex-shrink-0 rounded-full w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                  src="https://dummyimage.com/204x204"
+                />
+                <div className="flex-grow sm:pl-8">
+                  <h2 className="title-font font-medium text-lg text-gray-900">
+                    Liluo
+                  </h2>
+                  <h3 className="text-gray-500 mb-3">CEO x 运营负责人</h3>
+                  <p className="mb-4">
+                    九色鹿传媒创始人，曾落地华为、电信、威马汽车品牌设计经典项目
+                  </p>
+                  <span className="inline-flex">
+                    <a className="text-gray-500">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        className="w-5 h-5"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a className="ml-2 text-gray-500">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        className="w-5 h-5"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a className="ml-2 text-gray-500">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        className="w-5 h-5"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="p-4 lg:w-1/2">
+              <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img
+                  alt="team"
+                  className="flex-shrink-0 rounded-full w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                  src="https://avatars.githubusercontent.com/u/24560160?v=4"
+                />
+                <div className="flex-grow sm:pl-8">
+                  <h2 className="title-font font-medium text-lg text-gray-900">
+                    Turkyden
+                  </h2>
+                  <h3 className="text-gray-500 mb-3">CTO x 技术负责人</h3>
+                  <p className="mb-4">
+                    硕士毕业于同济大学，先后就职于腾讯、泛微等知名企业
+                  </p>
+                  <span className="inline-flex">
+                    <a className="text-gray-500">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        className="w-5 h-5"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a className="ml-2 text-gray-500">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        className="w-5 h-5"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a className="ml-2 text-gray-500">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        className="w-5 h-5"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="p-4 lg:w-1/2">
+              <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img
+                  alt="team"
+                  className="flex-shrink-0 rounded-full w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                  src="https://dummyimage.com/201x201"
+                />
+                <div className="flex-grow sm:pl-8">
+                  <h2 className="title-font font-medium text-lg text-gray-900">
+                    Frank
+                  </h2>
+                  <h3 className="text-gray-500 mb-3">视频技术专家</h3>
+                  <p className="mb-4">
+                    多年深耕于安卓视频技术、<a>FFmpeg</a>{' '}
+                    贡献者，先后就职于小鹏汽车、海康威视
+                  </p>
+                  <span className="inline-flex">
+                    <a className="text-gray-500">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        className="w-5 h-5"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a className="ml-2 text-gray-500">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        className="w-5 h-5"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a className="ml-2 text-gray-500">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        className="w-5 h-5"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="p-4 lg:w-1/2">
+              <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img
+                  alt="team"
+                  className="flex-shrink-0 rounded-full w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                  src="https://dummyimage.com/206x206"
+                />
+                <div className="flex-grow sm:pl-8">
+                  <h2 className="title-font font-medium text-lg text-gray-900">
+                    Henry Letham
+                  </h2>
+                  <h3 className="text-gray-500 mb-3">Designer</h3>
+                  <p className="mb-4">
+                    DIY tote bag drinking vinegar cronut adaptogen squid fanny
+                    pack vaporware.
+                  </p>
+                  <span className="inline-flex">
+                    <a className="text-gray-500">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        className="w-5 h-5"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a className="ml-2 text-gray-500">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        className="w-5 h-5"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a className="ml-2 text-gray-500">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        className="w-5 h-5"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -133,7 +386,7 @@ export default function IndexPage() {
             </p>
           </div>
           <div className="flex justify-center items-center">
-            <img className="w-2/3" src={IMAGE_ORGS} />
+            <img className="w-full" src={IMAGE_ORGS} />
           </div>
         </div>
       </section>
