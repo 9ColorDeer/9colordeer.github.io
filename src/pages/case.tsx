@@ -1,9 +1,46 @@
 import Layout from '@/components/layout';
 import IMAGE_CASE from '@/assets/case.jpg';
-import MOCK from '@/assets/mock.json';
+import initalCases from '@/assets/mock.json';
 import Fancybox from '@/components/fancybox';
+import { useState } from 'react';
+
+const initalCategorys = [
+  {
+    id: 0,
+    category: '全部',
+  },
+  {
+    id: 1,
+    category: '企业宣传片',
+  },
+  {
+    id: 2,
+    category: '影视广告',
+  },
+  {
+    id: 3,
+    category: '微电影',
+  },
+  {
+    id: 4,
+    category: '短视频',
+  },
+];
 
 export default function CasePage() {
+  const [categoryIndex, setCategoryIndex] = useState(0);
+
+  const [cases, setCases] = useState(initalCases);
+
+  const onClick = ({ id, category }: { id: number; category: string }) => {
+    setCases(
+      initalCases
+        .filter((v) => v.category?.includes(category) || id === 0)
+        .sort((a, b) => (Math.random() > 0.5 ? 1 : -1)),
+    );
+    setCategoryIndex(id);
+  };
+
   return (
     <Layout>
       <section className="pb-64">
@@ -22,19 +59,24 @@ export default function CasePage() {
         <div className="container px-5 py-24 mx-auto relative">
           <div className="absolute -top-10 w-full flex">
             <div className="flex bg-white px-1 py-2 shadow rounded-full m-auto">
-              ['全部', '企业宣传片']
-              <div className="mx-2 py-2 px-4 cursor-pointer | bg-indigo-500 rounded-full text-white shadow">
-                全部
-              </div>
-              <div className="mx-2 py-2 px-4 cursor-pointer">企业宣传片</div>
-              <div className="mx-2 py-2 px-4 cursor-pointer">影视广告</div>
-              <div className="mx-2 py-2 px-4 cursor-pointer">微电影</div>
-              <div className="mx-2 py-2 px-4 cursor-pointer">短视频</div>
+              {initalCategorys.map((item) => (
+                <div
+                  key={item.id}
+                  className={`mx-2 py-2 px-4 cursor-pointer | ${
+                    categoryIndex === item.id
+                      ? 'bg-indigo-500 rounded-full text-white shadow'
+                      : ''
+                  }`}
+                  onClick={() => onClick(item)}
+                >
+                  {item.category}
+                </div>
+              ))}
             </div>
           </div>
           <div className="flex flex-wrap -m-4">
             <Fancybox>
-              {MOCK.map((item, key) => (
+              {cases.map((item, key) => (
                 <div
                   key={key}
                   className="lg:w-1/4 md:w-1/2 p-4 w-full rounded"
