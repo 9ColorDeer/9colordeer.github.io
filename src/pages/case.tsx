@@ -1,8 +1,9 @@
+import { useState, useEffect } from 'react';
+import { useDebounce } from 'ahooks';
 import Layout from '@/components/layout';
 import IMAGE_CASE from '@/assets/case.jpg';
 import initalCases from '@/assets/mock.json';
 import Fancybox from '@/components/fancybox';
-import { useState } from 'react';
 
 const initalCategorys = [
   {
@@ -32,6 +33,10 @@ export default function CasePage() {
 
   const [cases, setCases] = useState(initalCases);
 
+  const [value, setValue] = useState('');
+
+  const debouncedValue = useDebounce(value, { wait: 500 });
+
   const onClick = ({ id, category }: { id: number; category: string }) => {
     setCases(
       initalCases
@@ -40,6 +45,16 @@ export default function CasePage() {
     );
     setCategoryIndex(id);
   };
+
+  const onChange = (e: InputEvent) => {
+    const { value } = e.target as HTMLInputElement;
+    setValue(value);
+    setCategoryIndex(0);
+  };
+
+  useEffect(() => {
+    setCases(initalCases.filter((item) => item.name.includes(debouncedValue)));
+  }, [debouncedValue]);
 
   return (
     <Layout>
@@ -53,11 +68,20 @@ export default function CasePage() {
         ></div>
         <div className="w-full absolute top-0 left-0 h-96 flex flex-col justify-center items-center">
           <h2 className="text-5xl text-white">「 案例展示 」</h2>
+          <div>
+            <input
+              className="w-64 h-12 px-4 bg-transparent border-solid border-0 border-b border-indigo-500 text-white focus:bg-indigo-600 focus:bg-opacity-10 outline-none text-center placeholder-gray-400"
+              type="text"
+              value={value}
+              onChange={onChange}
+              placeholder="请输入关键字搜索案例 ..."
+            />
+          </div>
         </div>
       </section>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto relative">
-          <div className="absolute -top-10 w-full flex">
+          <div className="invisible sm:visible absolute -top-10 w-full flex">
             <div className="flex bg-white px-1 py-2 shadow rounded-full m-auto">
               {initalCategorys.map((item) => (
                 <div

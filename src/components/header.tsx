@@ -30,10 +30,13 @@ export default function Header() {
               to="/case"
               className="mr-5 text-gray-300 hover:text-white hover:font-bold"
             >
-              案例展示
+              影视广告
             </Link>
             <Link className="mr-5 text-gray-300 hover:text-white hover:font-bold">
-              解决方案
+              官网建站
+            </Link>
+            <Link className="mr-5 text-gray-300 hover:text-white hover:font-bold">
+              数字化大屏
             </Link>
           </nav>
         </div>

@@ -23,6 +23,7 @@
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
     "@fancyapps/ui": "^4.0.0",
+    "ahooks": "^2.10.9",
     "react": "17.x",
     "react-dom": "17.x",
     "react-headroom": "^3.1.1",

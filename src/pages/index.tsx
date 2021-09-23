@@ -1,6 +1,7 @@
 import Layout from '@/components/layout';
 import IMAGE_ORGS from '@/assets/orgs.png';
 import IMGGE_LILUO from '@/assets/liluo.png';
+import IMAGE_WORKFLOW from '@/assets/workflow.jpg';
 import MOCK from '@/assets/mock.json';
 import Fancybox from '@/components/fancybox';
 import './index.css';
@@ -48,6 +49,11 @@ export default function IndexPage() {
             </div>
           </div>
         </div>
+        <div className="w-full h-screen absolute top-0 left-0 flex justify-center items-end">
+          <div className="text-2xl text-white animate-bounce">
+            <div>︾</div>
+          </div>
+        </div>
       </section>
 
       <section
@@ -57,7 +63,7 @@ export default function IndexPage() {
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-              合作案例
+              经典案例
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
               我们针对不同行业的合作伙伴量身定制了品牌营销影视解决方案
@@ -95,12 +101,26 @@ export default function IndexPage() {
               ))}
             </Fancybox>
           </div>
+          <div className="pt-20 text-center">
+            <a
+              className="inline-flex hover:text-white text-indigo-500 hover:text-indigo-600 hover:bg-indigo-500 hover:bg-opacity-10 py-2 bg-tranparent border-solid border-indigo-500 border px-6 focus:outline-none hover:border-indigo-600 rounded-full text-lg cursor-pointer"
+              href="/case"
+            >
+              更多案例 &rarr;
+            </a>
+          </div>
         </div>
       </section>
 
       <section className="bg-gradient-to-r from-indigo-600 via-indigo-500 to-indigo-600 text-gray-200 body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+        <div className="container px-5 py-24 mx-auto relative">
+          {/* <div className="z-0 absolute top-14 left-4 w-32 h-32 rounded border-solid border-yellow-600 shadow"></div>
+          <div className="z-0 absolute top-10 left-0 w-32 h-32 rounded bg-yellow-500 shadow"></div> */}
+          <div className="z-0 absolute bottom-10 left-64 w-24 h-24 rounded-full bg-gradient-to-r from-pink-500 shadow"></div>
+          <div className="z-0 absolute bottom-14 left-60 w-24 h-24 rounded-full border-solid border-pink-600 shadow"></div>
+          <div className="z-0 absolute top-20 right-64 w-16 h-16 rounded bg-gradient-to-b from-green-500 shadow"></div>
+          <div className="z-0 absolute top-24 right-60 w-16 h-16 rounded border-solid border-green-600 shadow"></div>
+          <div className="z-10 xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -113,8 +133,13 @@ export default function IndexPage() {
               「九色鹿传媒」创立于经济特区 -
               深圳，专注于为企业提供专业的影视广告、创意方案及拍摄制作服务，始终以客户诉求为出发点，帮助客户抢占和巩固品牌领导者的位置。
             </p>
-            <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
-            <p className="font-medium title-font tracking-wider text-sm">
+            <img
+              alt="team"
+              className="rounded-full w-12 h-12 mt-10 mb-4 shadow-lg"
+              style={{ filter: 'grayscale(90%)' }}
+              src="https://images.unsplash.com/photo-1529232356377-57971f020a94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
+            />
+            <p className="font-medium title-font tracking-wider text-sm mb-2">
               Liluo
             </p>
             <p>九色鹿传媒 CEO</p>
@@ -266,19 +291,19 @@ export default function IndexPage() {
               </div>
             </div>
             <img
-              className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
-              src="https://dummyimage.com/1200x500"
+              className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 h-auto max-w-full"
+              src={IMAGE_WORKFLOW}
               alt="step"
             />
           </div>
         </div>
       </section>
 
-      {/* <section className="text-gray-600 bg-gray-100 body-font">
+      <section className="text-gray-600 bg-gray-100 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-              团队介绍
+              核心成员
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
               团队成员来自国内头部企业，具备丰富的项目落地经验
@@ -289,15 +314,15 @@ export default function IndexPage() {
               <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                 <img
                   alt="team"
-                  className="flex-shrink-0 rounded-full w-36 h-36 object-cover object-center sm:mb-0 mb-4"
+                  className="flex-shrink-0 rounded w-36 h-36 object-cover object-center sm:mb-0 mb-4"
                   style={{ filter: 'grayscale(90%)' }}
-                  src={IMGGE_LILUO}
+                  src="https://images.unsplash.com/photo-1529232356377-57971f020a94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
                 />
                 <div className="flex-grow sm:pl-8">
                   <h2 className="title-font font-medium text-lg text-gray-900">
                     Liluo
                   </h2>
-                  <h3 className="text-gray-500 mb-3">CEO</h3>
+                  <h3 className="text-gray-500 mb-3">CEO x 执行总裁</h3>
                   <p className="mb-4">
                     九色鹿传媒创始人，曾率领团队成功落地华为、电信、威马汽车等创意广告项目
                   </p>
@@ -349,7 +374,7 @@ export default function IndexPage() {
               <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                 <img
                   alt="team"
-                  className="flex-shrink-0 rounded-full w-36 h-36 object-cover object-center sm:mb-0 mb-4"
+                  className="flex-shrink-0 rounded w-36 h-36 object-cover object-center sm:mb-0 mb-4"
                   style={{ filter: 'grayscale(90%)' }}
                   src="https://avatars.githubusercontent.com/u/24560160?v=4"
                 />
@@ -359,7 +384,7 @@ export default function IndexPage() {
                   </h2>
                   <h3 className="text-gray-500 mb-3">CTO x 技术负责人</h3>
                   <p className="mb-4">
-                    硕士毕业于同济大学，先后就职于腾讯、泛微等知名企业
+                    硕士毕业于同济大学，曾就职于腾讯并担任软件高级研发工程师
                   </p>
                   <span className="inline-flex">
                     <a className="text-gray-500">
@@ -409,7 +434,7 @@ export default function IndexPage() {
               <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                 <img
                   alt="team"
-                  className="flex-shrink-0 rounded-full w-36 h-36 object-cover object-center sm:mb-0 mb-4"
+                  className="flex-shrink-0 rounded w-36 h-36 object-cover object-center sm:mb-0 mb-4"
                   style={{ filter: 'grayscale(90%)' }}
                   src="https://avatars.githubusercontent.com/u/9020979?v=4"
                 />
@@ -470,17 +495,17 @@ export default function IndexPage() {
               <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                 <img
                   alt="team"
-                  className="flex-shrink-0 rounded-full w-36 h-36 object-cover object-center sm:mb-0 mb-4"
-                  src="https://dummyimage.com/206x206"
+                  className="flex-shrink-0 rounded w-36 h-36 object-cover object-center sm:mb-0 mb-4"
+                  style={{ filter: 'grayscale(90%)' }}
+                  src="https://avatars.githubusercontent.com/u/50906620?v=4"
                 />
                 <div className="flex-grow sm:pl-8">
                   <h2 className="title-font font-medium text-lg text-gray-900">
-                    Henry Letham
+                    Jacky Chen
                   </h2>
-                  <h3 className="text-gray-500 mb-3">Designer</h3>
+                  <h3 className="text-gray-500 mb-3">UI / UX 设计总监</h3>
                   <p className="mb-4">
-                    DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                    pack vaporware.
+                    具有 15+ 年产品设计经验，专注于 toB 企业级品牌设计方案落地
                   </p>
                   <span className="inline-flex">
                     <a className="text-gray-500">
@@ -528,7 +553,157 @@ export default function IndexPage() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
+
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+              认证专家
+            </h1>
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+              九色鹿传媒旗下多位经验丰富的认证专家为您提供一对一的定制化服务
+            </p>
+          </div>
+          <div className="flex flex-wrap -m-2">
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-solid border-gray-200 border p-4 rounded-lg">
+                <img
+                  alt="team"
+                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  src="https://images.unsplash.com/photo-1544168190-79c17527004f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
+                />
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Jingzhao Chen
+                  </h2>
+                  <p className="text-gray-500">UI Designer</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-solid border-gray-200 border p-4 rounded-lg">
+                <img
+                  alt="team"
+                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
+                />
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Henry Letham
+                  </h2>
+                  <p className="text-gray-500">CTO</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-solid border-gray-200 border p-4 rounded-lg">
+                <img
+                  alt="team"
+                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
+                />
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Oskar Blinde
+                  </h2>
+                  <p className="text-gray-500">Founder</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-solid border-gray-200 border p-4 rounded-lg">
+                <img
+                  alt="team"
+                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  src="https://images.unsplash.com/photo-1475823678248-624fc6f85785?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&&fit=facearea&facepad=3&w=256&h=256&q=80"
+                />
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    John Doe
+                  </h2>
+                  <p className="text-gray-500">DevOps</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-solid border-gray-200 border p-4 rounded-lg">
+                <img
+                  alt="team"
+                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  src="https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
+                />
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Martin Eden
+                  </h2>
+                  <p className="text-gray-500">Software Engineer</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-solid border-gray-200 border p-4 rounded-lg">
+                <img
+                  alt="team"
+                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  src="https://images.unsplash.com/photo-1515077678510-ce3bdf418862?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
+                />
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Boris Kitua
+                  </h2>
+                  <p className="text-gray-500">UX Researcher</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-solid border-gray-200 border p-4 rounded-lg">
+                <img
+                  alt="team"
+                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
+                />
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Atticus Finch
+                  </h2>
+                  <p className="text-gray-500">QA Engineer</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-solid border-gray-200 border p-4 rounded-lg">
+                <img
+                  alt="team"
+                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  src="https://images.unsplash.com/photo-1523746873031-9cf80e9e6532?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&&fit=facearea&facepad=3&w=256&h=256&q=80"
+                />
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Alper Kamu
+                  </h2>
+                  <p className="text-gray-500">System</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-solid border-gray-200 border p-4 rounded-lg">
+                <img
+                  alt="team"
+                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  src="https://images.unsplash.com/photo-1564564321361-5694c96475ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80"
+                />
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 title-font font-medium">
+                    Rodrigo Monchi
+                  </h2>
+                  <p className="text-gray-500">Product Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
@@ -541,10 +716,32 @@ export default function IndexPage() {
             </p>
           </div>
           <div className="flex justify-center items-center">
-            <img className="w-full" src={IMAGE_ORGS} />
+            <img className="w-5/6" src={IMAGE_ORGS} />
           </div>
         </div>
       </section>
+
+      {/* <section className="text-gray-600 body-font relative">
+        <div className="absolute inset-0 bg-gray-300">
+          <iframe width="100%" height="100%" frameBorder="0" marginHeight={0} marginWidth={0} title="map" scrolling="no" src="https://www.amap.com/search?query=%E6%B7%B1%E5%9C%B3%E5%B8%82%E9%BE%99%E5%B2%97%E5%8C%BA%E4%B8%87%E7%A7%91%E7%AC%AC%E4%BA%94%E5%9B%AD%E6%A2%A7%E6%A1%90%E5%9D%8AD202&city=440000&geoobj=109.319454%7C20.576485%7C112.007942%7C22.021946&zoom=9.56"></iframe>
+        </div>
+        <div className="container px-5 py-24 mx-auto flex">
+          <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+            <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
+            <p className="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+            <div className="relative mb-4">
+              <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
+            <input type="email" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+            </div>
+            <div className="relative mb-4">
+              <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
+              <textarea id="message" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+            <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+            <p className="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
+          </div>
+        </div>
+      </section> */}
     </Layout>
   );
 }
